@@ -1,0 +1,16 @@
+{
+	"name": "wolfthemes/wolf-woocommerce-wishlist",
+	"description": "A simple and lightweight wishlist feature for WooCommerce.",
+	"type": "wordpress-plugin",
+	"homepage": "https://github.com/wolfthemes/wolf-woocommerce-wishlist",
+	"authors": [
+		{
+			"name": "WolfThemes",
+			"email": "contact@wolfthemes.com",
+			"homepage": "https://wolfthemes.com"
+		}
+	],
+	"require": {
+		"php": ">=5.6"
+	}
+}

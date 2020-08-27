@@ -1,0 +1,14 @@
+{
+	"version": "1.1.6",
+	"updated": "2020-08-27",
+	"slug": "wolf-woocommerce-wishlist",
+	"name": "WooCommerce Wishlist",
+	"packagename": "WolfWooCommerceWishlist",
+	"created": "2016-12-07",
+	"createdNice": "7th december 2016",
+	"description": "A simple and lightweight wishlist feature for WooCommerce.",
+	"link": "https://github.com/wolfthemes/wolf-woocommerce-wishlist",
+	"shortlink": "http://wlfthm.es/q3KPfE",
+	"author": "WolfThemes",
+	"authorURI": "http://wolfthemes.com"
+}

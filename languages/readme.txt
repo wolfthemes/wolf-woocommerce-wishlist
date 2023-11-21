@@ -1,5 +1,5 @@
 How to translate your theme or plugin:
-http://wlfthm.es/translate
+https://wlfthm.es/translate
 
 --------
 

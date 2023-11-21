@@ -1,5 +1,9 @@
 # Changelog
 
+#### 21th November 2023 - Version 1.1.7
+
+-   Other: Declare Compatiblity with WooCommerce High Storage Performance
+
 #### 27th August 2020 - Version 1.1.6
 
 -   Other: Unbrand plugin name

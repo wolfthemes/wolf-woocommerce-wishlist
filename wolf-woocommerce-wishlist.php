@@ -3,7 +3,7 @@
  * Plugin Name: WooCommerce Wishlist
  * Plugin URI: https://github.com/wolfthemes/wolf-woocommerce-wishlist
  * Description: A simple and lightweight wishlist feature for WooCommerce.
- * Version: 1.1.6
+ * Version: 1.1.7
  * Author: WolfThemes
  * Author URI: http://wolfthemes.com
  * Requires at least: 5.0
@@ -48,7 +48,7 @@ if ( ! class_exists( 'Wolf_WooCommerce_Wishlist' ) ) {
 	 * Contains the main functions for Wolf_WooCommerce_Wishlist
 	 *
 	 * @class Wolf_WooCommerce_Wishlist
-	 * @version 1.1.6
+	 * @version 1.1.7
 	 * @since 1.0.0
 	 */
 	class Wolf_WooCommerce_Wishlist {
@@ -61,7 +61,7 @@ if ( ! class_exists( 'Wolf_WooCommerce_Wishlist' ) ) {
 		/**
 		 * @var string
 		 */
-		public $version = '1.1.6';
+		public $version = '1.1.7';
 
 		/**
 		 * @var WooCommerce Wishlist The single instance of the class
@@ -114,6 +114,12 @@ if ( ! class_exists( 'Wolf_WooCommerce_Wishlist' ) ) {
 				add_action( 'admin_notices', array( $this, 'warning_php_version' ) );
 				return;
 			}
+
+			add_action( 'before_woocommerce_init', function() {
+				if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+					\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+				}
+			} );
 
 			$this->define_constants();
 			$this->includes();

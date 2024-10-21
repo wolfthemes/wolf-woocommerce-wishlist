@@ -38,7 +38,7 @@ function wolf_add_to_wishlist() {
 	$is_in_wishlist = ( $wishlist ) ? ( in_array( $product_id, $wishlist ) ) : false;
 
 	$class = ( $is_in_wishlist ) ? 'wolf_in_wishlist' : '';
-	
+
 	$text = ( $is_in_wishlist ) ? esc_html__( 'Remove from wishlist', 'wolf-woocommerce-wishlist' ) : esc_html__( 'Add to wishlist', 'wolf-woocommerce-wishlist' );
 	do_action( 'www_before_add_to_wishlist' );
 
@@ -47,7 +47,7 @@ function wolf_add_to_wishlist() {
 	?>
 	<a
 	class="<?php echo esc_attr( $class ); ?>"
-	href="?add_to_wishlist=<?php the_ID(); ?>"
+	href="#"
 	title="<?php echo esc_attr( $text ); ?>"
 	rel="nofollow"
 	data-product-title="<?php echo esc_attr( get_the_title() ); ?>"
@@ -187,7 +187,7 @@ function www_list_to_array( $list, $separator = ',' ) {
  * @return array
  */
 function www_array_to_list( $array ) {
-	
+
 	$list = '';
 
 	if ( is_array( $array ) ) {

@@ -1,5 +1,9 @@
 # Changelog
 
+#### 21th October 2024 - Version 1.1.8
+
+-   Improvement: Replaced URL with # in href attribute in button to prevent issues with script minification plugins
+
 #### 21th November 2023 - Version 1.1.7
 
 -   Other: Declare Compatiblity with WooCommerce High Storage Performance

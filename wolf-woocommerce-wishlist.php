@@ -3,11 +3,11 @@
  * Plugin Name: WooCommerce Wishlist
  * Plugin URI: https://github.com/wolfthemes/wolf-woocommerce-wishlist
  * Description: A simple and lightweight wishlist feature for WooCommerce.
- * Version: 1.1.7
+ * Version: 1.1.8
  * Author: WolfThemes
  * Author URI: http://wolfthemes.com
- * Requires at least: 5.0
- * Tested up to: 5.5
+ * Requires at least: 6.0
+ * Tested up to: 6.6
  *
  * Text Domain: wolf-woocommerce-wishlist
  * Domain Path: /languages/
@@ -48,7 +48,7 @@ if ( ! class_exists( 'Wolf_WooCommerce_Wishlist' ) ) {
 	 * Contains the main functions for Wolf_WooCommerce_Wishlist
 	 *
 	 * @class Wolf_WooCommerce_Wishlist
-	 * @version 1.1.7
+	 * @version 1.1.8
 	 * @since 1.0.0
 	 */
 	class Wolf_WooCommerce_Wishlist {
@@ -61,7 +61,7 @@ if ( ! class_exists( 'Wolf_WooCommerce_Wishlist' ) ) {
 		/**
 		 * @var string
 		 */
-		public $version = '1.1.7';
+		public $version = '1.1.8';
 
 		/**
 		 * @var WooCommerce Wishlist The single instance of the class
